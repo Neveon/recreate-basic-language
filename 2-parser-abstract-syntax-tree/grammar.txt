@@ -1,0 +1,12 @@
+For reference
+
+expr    : term ((PLUS|MINUS) term)*
+
+term    : factor ((MUL|DIV) factor)*
+
+factor  : INT|FLOAT
+        : (PLUS|MINUS) factor
+        support for negative nums
+
+        : LPAREN expre RPAREN
+        support for parenthesis
